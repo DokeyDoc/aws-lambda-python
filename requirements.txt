@@ -1,0 +1,5 @@
+rembg
+numpy
+pillow
+onnxruntime
+boto3
