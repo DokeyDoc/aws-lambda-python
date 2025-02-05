@@ -16,7 +16,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
-	"postCreateCommand": "pip3 install --user --upgrade pip && pip install --user rembg numpy pillow onnxruntime boto3 && sudo apt-get update && sudo apt-get install -y nodejs npm && npm install -g serverless",
+	"postCreateCommand": "pip3 install --user --upgrade pip && pip install --user -r requirements.txt && sudo apt-get update && sudo apt-get install -y curl && curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - && sudo apt-get install -y nodejs && npm config set prefix /home/vscode/.npm-global && npm install -g serverless",
 	// Configure tool-specific properties.
 	// "customizations": {},
 
